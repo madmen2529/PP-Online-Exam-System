@@ -44,3 +44,35 @@ Pages List
     - btn_next
 
 Teacher
+Page lists
+  - Dashboard
+    - Login
+    - Register
+    - Own Subjects list
+    - Add Subject
+    - Edit Subject detail
+    - Student Do Exam lists x 
+  - Login
+    - Username
+    - Password
+    - Remember me x
+    - Forgot password x
+    - Login
+  - Register
+    - Firstname
+    - Lastname
+    - Gender
+    - Username
+    - Password
+  - Create Subject
+    - Add Topic
+    - Subject Name
+    - btn_create
+  - Add Topic
+    - Topic name
+    - Choice A
+    - Choice B
+    - Choice C
+    - Choice D
+    - Correct Choice
+    - btn_create
