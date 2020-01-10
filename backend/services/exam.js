@@ -1,6 +1,6 @@
 module.exports = (app, db) => {
   //Init
-  const tableName = "tableName";
+  const tableName = "exam";
   const table = db[tableName];
   const findAll = `/${tableName}`;
   const create = `/${tableName}`;
@@ -8,18 +8,17 @@ module.exports = (app, db) => {
   const del = `/${tableName}/:id`;
 
   //Query
-  const arrayOfFields = [];
+  const arrayOfFields = [
+    "name",
+    "type",
+    "total_score",
+    "description",
+    "teacher_id"
+  ];
 
   app.get(findAll, (req, res) => {
     table
-      .findAll({
-        // order: [
-        //   ['id', 'DESC'],
-        // ],
-        // include: [{
-        //   model: db.comment
-        // }]
-      })
+      .findAll({})
       .then(result => {
         console.log(result);
         res.status(200).json(result);
