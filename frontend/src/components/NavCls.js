@@ -17,14 +17,14 @@ export default class NavCls extends Component {
           defaultSelectedKeys={["home"]}
           style={{ lineHeight: "64px" }}
         >
-          <Menu.Item key="home">
+          {/* <Menu.Item key="home">
             <Link to="/">
-              <i class="fas fa-home mr-2"></i>Home
+              <i className="fas fa-home mr-2"></i>Home
             </Link>
-          </Menu.Item>
-          <Menu.Item key="exam">
-            <Link to="/createresume">
-              <i class="fas fa-file-alt mr-2"></i>Exam
+          </Menu.Item> */}
+          <Menu.Item key="examlist">
+            <Link to="/examlist">
+              <i className="fas fa-briefcase mr-2"></i>Exam List
             </Link>
           </Menu.Item>
         </Menu>

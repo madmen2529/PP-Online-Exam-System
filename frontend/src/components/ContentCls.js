@@ -3,11 +3,18 @@ import { Layout } from "antd";
 
 import { Switch, Route, Link } from "react-router-dom";
 
+//Frontend
 import Home from "./Home";
 import Login from "./Login";
-import CreateResume from "./CreateResume";
 import Register from "./Register";
-import FindJob from "./FindJob";
+import ExamList from "./ExamList";
+import ExamIntro from "./ExamIntro";
+import ExamTopic from "./ExamTopic";
+import ExamSummary from "./ExamSummary";
+
+//Backend
+import Dashboard from "./Dashboard";
+import ManageExam from "./ManageExam";
 
 import "antd/dist/antd.css";
 
@@ -26,11 +33,8 @@ export default class ContentCls extends Component {
           }}
         >
           <Switch>
-            <Route path="/createresume">
-              <CreateResume />
-            </Route>
-            <Route path="/findjob">
-              <FindJob />
+            <Route path="/examlist">
+              <ExamList />
             </Route>
             <Route path="/login">
               <Login />

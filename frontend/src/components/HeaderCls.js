@@ -22,6 +22,9 @@ export default class HeaderCls extends Component {
   render() {
     return (
       <section id="header-section">
+        {/* <div className="logo bg-white text-center">
+          <h2>Logo</h2>
+        </div> */}
         <Header id="navtop-header-antd">
           <div className="float-left">
             <div className="pl-3"> Logo </div>
@@ -36,7 +39,7 @@ export default class HeaderCls extends Component {
             <Menu.Item key="enterpreneur">
               <Button disabled>
                 {/* <Link to="/"> */}
-                <i class="fas fa-user-tie mr-2"></i>
+                <i className="fas fa-user-tie mr-2"></i>
                 Teacher
                 {/* </Link> */}
               </Button>
@@ -45,13 +48,13 @@ export default class HeaderCls extends Component {
               <Button.Group>
                 <Button type="primary">
                   <Link to="/login">
-                    <i class="fas fa-sign-in-alt mr-2"></i>
+                    <i className="fas fa-sign-in-alt mr-2"></i>
                     Login
                   </Link>
                 </Button>
                 <Button type="primary">
                   <Link to="/register">
-                    <i class="fas fa-user mr-2"></i>
+                    <i className="fas fa-user mr-2"></i>
                     Register
                   </Link>
                 </Button>

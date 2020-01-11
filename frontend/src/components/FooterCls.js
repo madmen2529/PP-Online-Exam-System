@@ -40,7 +40,7 @@ export default class FooterCls extends Component {
               <Icon className="mr-3" type="facebook" />
               <Icon className="mr-3" type="twitter" />
               <Icon className="mr-3" type="youtube" />
-              <i class="fab fa-line mr-5"></i>
+              <i className="fab fa-line mr-5"></i>
             </h1>
           </div>
         </div>
