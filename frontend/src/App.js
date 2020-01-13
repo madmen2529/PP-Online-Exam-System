@@ -1,26 +1,25 @@
-import React from "react";
-import "./App.css";
-
-import { Layout } from "antd";
-import "antd/dist/antd.css";
-
-import { BrowserRouter } from "react-router-dom";
-
-import Header from "./components/HeaderCls";
-import Nav from "./components/NavCls";
-import Content from "./components/ContentCls";
-import Footer from "./components/FooterCls";
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Layout id="layout" className="layout">
-        <Header />
-        <Nav />
-        <Content />
-        <Footer />
-      </Layout>
-    </BrowserRouter>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
 }
 
