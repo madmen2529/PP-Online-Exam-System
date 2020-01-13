@@ -30,6 +30,7 @@ module.exports = (app, db) => {
   });
 
   app.post(create, (req, res) => {
+    console.log("hello");
     let obj = {};
     arrayOfFields.forEach(item => (obj[item] = req.body[item]));
     table
