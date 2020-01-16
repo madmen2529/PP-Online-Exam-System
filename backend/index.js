@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 //parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 
-db.sequelize.sync({ force: true }).then(() => {
+db.sequelize.sync({ force: false }).then(() => {
   studentService(app, db);
   teacherService(app, db);
   examService(app, db);
