@@ -17,7 +17,7 @@ class Register extends Component {
       if (!err) {
         console.log("Received values of form: ", values);
 
-        Axios.post(`https://localhost:8080/student`, { values }).then(res => {
+        Axios.post("/student", { values }).then(res => {
           console.log(res);
           console.log(res.data);
         });
