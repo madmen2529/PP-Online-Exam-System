@@ -52,15 +52,12 @@ export default class ExamList extends Component {
   render() {
     return (
       <section id="exam-list-section">
-        <div className="text-center">
-          <h3 className="mt-3">{this.state.exam.name}</h3>
-        </div>
         <Table
-          className="mt-3"
+          className="pt-3"
           columns={columns}
           dataSource={this.state.exams}
           bordered
-          title={() => "Exam type"}
+          title={() => "Exam Lists"}
           footer={() => "Footer"}
         />
       </section>

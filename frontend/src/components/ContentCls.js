@@ -32,7 +32,7 @@ export default class ContentCls extends Component {
             height: "100%"
           }}
         >
-          <Switch>
+          {/* <Switch>
             <Route path="/examlist">
               <ExamList />
             </Route>
@@ -45,7 +45,8 @@ export default class ContentCls extends Component {
             <Route path="/">
               <Home />
             </Route>
-          </Switch>
+          </Switch> */}
+          <ExamList />
         </div>
       </Content>
     );
