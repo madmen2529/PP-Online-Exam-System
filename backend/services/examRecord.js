@@ -8,7 +8,12 @@ module.exports = (app, db) => {
   const del = `/${tableName}/:id`;
 
   //Query
-  const arrayOfFields = ["student_id", "exam_id", "score", "status"];
+  const arrayOfFields = [
+    "student_id",
+    "exam_id",
+    "topic_id",
+    "selected_choice"
+  ];
 
   app.get(findAll, (req, res) => {
     table

@@ -1,18 +1,17 @@
 const mdlName = "student";
 
 module.exports = (sequelize, DataTypes) => {
-
   const mdl = sequelize.define(mdlName, {
     username: DataTypes.STRING,
     password: DataTypes.STRING,
     firstname: DataTypes.STRING,
     lastname: DataTypes.STRING,
-    gender: DataTypes.ENUM("M", "F"),
-  })
+    gender: DataTypes.ENUM("M", "F")
+  });
 
-  mdl.associate = function (models) {
-    mdl.hasMany(models.exam_record)
+  mdl.associate = function(models) {
+    mdl.hasMany(models.exam_record, { foreignKey: "student_id" });
   };
 
-  return mdl
-}
+  return mdl;
+};
